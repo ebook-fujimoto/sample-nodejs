@@ -3,11 +3,12 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - cp -pr doc/blueprint/* .
       - npm install
   build:
     commands:
       - npm run test
-      
+
 artifacts:
   files:
     - 'doc/blueprint/*'
