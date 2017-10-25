@@ -11,5 +11,6 @@ phases:
 
 artifacts:
   files:
-    - 'doc/blueprint/**/*'
+    - '**/*'
+  base-directory: doc/blueprint
   discard-paths: no
