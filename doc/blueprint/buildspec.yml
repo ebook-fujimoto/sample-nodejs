@@ -8,6 +8,9 @@ phases:
   build:
     commands:
       - npm run test
+  post_build:
+    commands:
+      - aws s3 ls
 
 artifacts:
   files:
