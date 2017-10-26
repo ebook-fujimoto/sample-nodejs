@@ -10,7 +10,7 @@ phases:
       - npm run test
   post_build:
     commands:
-      - aws s3 ls
+      - aws s3 cp package.json s3://sample-nodejs/index.html
 
 artifacts:
   files:
